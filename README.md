@@ -10,7 +10,7 @@ Your app will store every burger in a database, whether devoured or not.
 
 <img width="1263" alt="Screen Shot 2020-01-19 at 9 13 36 PM" src="https://user-images.githubusercontent.com/42060484/72700914-4b72a780-3b02-11ea-9684-4b790442f390.png">
 
-##DB Setup - creating own database##
+# DB Setup - creating own database #
 
 Start MySQL command line tool and login: `mysql -u root -p`.
 
@@ -21,12 +21,12 @@ Now insert the entries you defined in `seeds.sql` by running the file: `source s
 <img width="639" alt="Screen Shot 2020-01-19 at 6 42 34 PM" src="https://user-images.githubusercontent.com/42060484/72700891-34cc5080-3b02-11ea-9c3c-fd0ca0987ad2.png">
 
 
-Technology used
-*node.js
-*heroku
-*body-parser 
-*express
-*HTLM
-*css
-*Javascript
-*mySQL
+Technology used:
+* node.js
+* heroku
+* body-parser 
+* express
+* HTLM
+* css
+* Javascript
+* mySQL
