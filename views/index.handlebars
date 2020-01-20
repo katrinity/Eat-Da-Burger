@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <br>
+            <h1 class="title">Eat-Da-Burger!</h1>
+            <br>
+        </div>
+    </div>
+    <br>
+
+
+
+    <div class="row">
+        <div class="col-12 addBurger">
+
+            <h1 class="header">Please enter a type of burger you would like to eat</h1>
+            <div class="typeIn">
+                <form class="create-update-form" action="/insertOne" method="POST">
+                    <div class="form-group">
+                        <textarea type="text" name="burger_name"></textarea><br>
+                        <button class="btn btn-warning" type="submit">Submit</button>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 burgers">
+            <h1 class="header">Available Burgers</h1>
+            <br>
+            <ul>
+                {{#each burgers}}
+                {{#unless this.devoured}}
+                <div class="showBurger">
+                    <p>{{this.burger_name}}</p>
+                    <form action="/updateOne/{{this.id}}" method="POST">
+                        <input type="hidden" name="devoured" value="1">
+                        <button type="submit" class="btn">Devour it!</button>
+                    </form>
+                    <br>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-6 devoured">
+            <h1 class="header">Devoured Burgers </h1>
+            <br>
+            <ul>
+                {{#each burgers}}
+                {{#if this.devoured}}
+                <div class="devourBurger">
+                    <p>
+                        {{this.burger_name}}</p>
+                    <form action="/deleteOne/{{this.id}}" method="POST">
+                        <button type="submit" class="btn">Delete!</button>
+                    </form>
+                    <br>
+                    {{/if}}
+                    {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+body {
+    background-image: url("../img/burger.jpg");
+    background-size: 100%;
+    background-color: rgb(231, 105, 88);
+
+}
+
+.title {
+    text-align: center;
+    color: rgb(231, 105, 88);
+    font-size: 50px;
+    font-family: fantasy;
+   
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+    
+}
+
+.addBurger {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.typeIn {
+    text-align: center;
+    margin: 0 auto 3% 0; 
+
+}
+
+.showBurger {
+    text-align: center;
+    font-size: 28px;
+    font-family: fantasy;
+}
+
+.devourBurger{
+    text-align: center;
+    font-size: 28px;
+    font-family: fantasy;
+}
+
+.btn {
+    background-color: rgb(231, 105, 88);
+    font-family: fantasy;
+}
+
+p {
+    color: white;
+}
